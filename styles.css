@@ -10,7 +10,6 @@ body {
 img {
     width: 288px;
     height: 384px;
-    flex-direction: column;
     object-fit: cover;
     border-radius: 10px;
     border: 2px solid black;
@@ -24,12 +23,21 @@ img {
 
 .page-header-pic{
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
     align-content: center;
     flex-grow: 3;
     flex-flow: row wrap;
-    order: 1;
     gap: 60px;
+}
+
+.page-body{
+    flex-direction: column;
+}
+
+#page-container{
+    display: flex;
+    flex-direction: row;
 }
 
 
